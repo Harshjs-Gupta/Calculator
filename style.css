@@ -21,6 +21,7 @@ form{
     flex-direction: column;
     align-items: center;
     background-color:greenyellow;
+    border: 2px solid black;
 
 }
 input{
