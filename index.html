@@ -9,9 +9,14 @@
 </head>
 <body>
 
+    <!-- this line defines a form with the name "form" -->
     <form name="form">
+        <!--this line creates a text input file with the name "dispaly" and the id "display" this is where the calculator input oro output displayed-->
         <input type="text" name="display" id="display" >
+         <!-- this line starts a division(container) with the class "gried"-->
         <div class="gried">
+            <!-- this all line create button type input value with onclick attribute that specifies what action to take when the button is clicked.
+                 In this buttons we have numbers , arithmetic operators and one button is for delete the input and output value -->
             <input type="button" value="1" onclick="form.display.value += '1' ">
             <input type="button" value="2" onclick="form.display.value += '2' ">
             <input type="button" value="3" onclick="form.display.value += '3' ">
@@ -27,8 +32,9 @@
             <input type="button" value="00" onclick="form.display.value += '00' ">
             <input type="button" value="0" onclick="form.display.value += '0' ">
             <input type="button" value="/" onclick="form.display.value += '/' ">
-            <input type="button" value="=" onclick="form.display.value = eval(form.display.value) ">
             <input type="button" value="C" onclick="form.display.value = ' ' ">
+            <!-- int this we have one more button for display output that is eval function-->
+            <input type="button" value="=" onclick="form.display.value = eval(form.display.value) ">
 
 
         </div>
