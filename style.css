@@ -26,7 +26,8 @@ form{
     align-items: center;
     background-color:greenyellow;
     border: 2px solid black;
-    
+    background-image: url("/Images/Whitemarbel.jpg");
+    background-size: cover;
 
 }
 input{
