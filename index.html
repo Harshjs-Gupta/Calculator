@@ -1,44 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <h2> Calculator </h2>
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <h2>Calculator</h2>
+  </head>
+  <body>
     <!-- this line defines a form with the name "form" -->
     <form name="form">
-        <!--this line creates a text input file with the name "dispaly" and the id "display" this is where the calculator input oro output displayed-->
-        <input type="text" name="display" id="display" >
-         <!-- this line starts a division(container) with the class "gried"-->
-        <div class="gried">
-            <!-- this all line create button type input value with onclick attribute that specifies what action to take when the button is clicked.
-                 In this buttons we have numbers , arithmetic operators and one button is for delete the input and output value -->
-            <input type="button" value="1" onclick="form.display.value += '1' ">
-            <input type="button" value="2" onclick="form.display.value += '2' ">
-            <input type="button" value="3" onclick="form.display.value += '3' ">
-            <input type="button" value="+" onclick="form.display.value += '+' ">
-            <input type="button" value="4" onclick="form.display.value += '4' ">
-            <input type="button" value="5" onclick="form.display.value += '5' ">
-            <input type="button" value="6" onclick="form.display.value += '6' ">
-            <input type="button" value="-" onclick="form.display.value += '-' ">
-            <input type="button" value="7" onclick="form.display.value += '7' ">
-            <input type="button" value="8" onclick="form.display.value += '8' ">
-            <input type="button" value="9" onclick="form.display.value += '9' ">
-            <input type="button" value="*" onclick="form.display.value += '*' ">
-            <input type="button" value="00" onclick="form.display.value += '00' ">
-            <input type="button" value="0" onclick="form.display.value += '0' ">
-            <input type="button" value="/" onclick="form.display.value += '/' ">
-            <input type="button" value="C" onclick="form.display.value = ' ' ">
-            <!-- In this we have one more button for display output that is eval function-->
-            <input type="button" value="=" onclick="form.display.value = eval(form.display.value) ">
-
-
+      <!--this line creates a text input file with the name "dispaly" and the id "display" this is where the calculator input oro output displayed-->
+      <input type="text" name="display" id="display" />
+      <!-- this line starts a division(container) with the class "gried"-->
+      <div class="gried">
+        <div id="topButton">
+          <input
+            type="button"
+            value="Clear"
+            id="clear"
+            onclick="form.display.value = ' ' "
+          />
+          <input
+            type="button"
+            value="/"
+            id="Division"
+            onclick="form.display.value += '/' "
+          />
+          <input
+            type="button"
+            value="*"
+            id="Multiplication"
+            onclick="form.display.value += '*' "
+          />
         </div>
-     </form>
-    
-</body>
+        <div id="secondRowButton">
+          <input
+            type="button"
+            value="7"
+            class="Number"
+            onclick="form.display.value += '7' "
+          />
+          <input
+            type="button"
+            value="8"
+            class="Number"
+            onclick="form.display.value += '8' "
+          />
+          <input
+            type="button"
+            value="9"
+            class="Number"
+            onclick="form.display.value += '9' "
+          />
+          <input
+            type="button"
+            value="-"
+            class="Minus"
+            onclick="form.display.value += '-' "
+          />
+          <input
+            type="button"
+            value="4"
+            class="Number"
+            onclick="form.display.value += '4' "
+          />
+          <input
+            type="button"
+            value="5"
+            class="Number"
+            onclick="form.display.value += '5' "
+          />
+          <input
+            type="button"
+            value="6"
+            class="Number"
+            onclick="form.display.value += '6' "
+          />
+          <input
+            type="button"
+            value="+"
+            id="Addition"
+            onclick="form.display.value += '+' "
+          />
+          <input
+            type="button"
+            value="1"
+            class="Number"
+            onclick="form.display.value += '1' "
+          />
+          <input
+            type="button"
+            value="2"
+            class="Number"
+            onclick="form.display.value += '2' "
+          />
+          <input
+            type="button"
+            value="3"
+            class="Number"
+            onclick="form.display.value += '3' "
+          />
+        </div>
+        <div id="bottomButtom">
+          <input
+            type="button"
+            value="0"
+            class="Zero"
+            onclick="form.display.value += '0' "
+          />
+          <input
+            type="button"
+            value="00"
+            class="Zero"
+            onclick="form.display.value += '00' "
+          />
+          <input
+            type="button"
+            value="."
+            class="dot"
+            onclick="form.display.value += '.' "
+          />
+
+          <input
+            type="button"
+            value="="
+            class="answer"
+            onclick="form.display.value = eval(form.display.value) "
+          />
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
