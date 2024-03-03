@@ -103,7 +103,9 @@ input {
 }
 
 #bottomButtom {
-  display: flex;
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px;
+  grid-template-rows: 60px;
   position: relative;
   top: 30px;
   left: 15px;
