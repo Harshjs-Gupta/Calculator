@@ -45,6 +45,7 @@ input {
 
 #topButton {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   top: 10px;
   left: 15px;
